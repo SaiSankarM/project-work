@@ -1,0 +1,33 @@
+.home{
+    background-image: url(https://static.vecteezy.com/system/resources/previews/002/862/273/non_2x/cinema-screen-for-movie-presentation-light-abstract-technology-background-free-vector.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height:100%;
+}
+.cardText{
+color:rgb(223, 22, 32);
+}
+h3{
+    color: white;
+}
+h4{
+    color:lightgoldenrodyellow;
+}
+h5{
+    color:blueviolet ;
+}
+.trend{
+    background-color: #F4D03F;
+    background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
+}
+.one{
+    background-image: url(	https://originserver-static1-uat.pvrcinemas.com/newweb/movies/thumb/374x226/HO00019574.jpg);
+    filter: blur(8px);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+

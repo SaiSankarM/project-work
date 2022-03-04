@@ -1,0 +1,12 @@
+i{
+    color:gold;
+}
+ul>li>a{
+    color:gold;
+}
+ul>li>a:hover{
+    color:white;
+}
+nav{
+    background-color:rgb(41, 41, 87);
+}

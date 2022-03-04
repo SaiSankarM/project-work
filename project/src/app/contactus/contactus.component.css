@@ -1,0 +1,28 @@
+.contact{
+    background-image: url(https://media.istockphoto.com/photos/old-scratched-film-strip-grunge-texture-background-picture-id1067089520?b=1&k=20&m=1067089520&s=170667a&w=0&h=oTNqZMR5SNGzzaq1zqsgRYZAzUoYU3iqHeZUOX1hYgs=);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height:100%;
+    /* background-color: black; */
+    
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+a:hover{
+    text-decoration: underline;
+    color: brown;
+}
+.red{
+    color:goldenrod;
+}
+button{
+    background-color: brown;
+    color: blanchedalmond;
+}
+

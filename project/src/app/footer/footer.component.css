@@ -1,0 +1,32 @@
+.footer{
+    background-color:rgb(41, 41, 87);
+}
+li{
+    list-style-type: none;
+    text-decoration: none;
+    display: list-item;
+    margin-top: 5px;
+}
+ul{
+    color: gold;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: gold;
+}
+h5{
+    color: white;
+
+}
+h5:hover{
+color: gold;
+}
+i{
+    color: white;
+}
+i:hover{
+    color: gold;
+}

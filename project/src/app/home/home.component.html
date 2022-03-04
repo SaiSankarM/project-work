@@ -1,0 +1,261 @@
+<div class="home">
+    <!-- basic carousel 1 -->
+    <div id="basicCarousel1" class="carousel  slide mt-5 pt-5" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../../assets/spiderman.webp" class="d-block h-100 w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="../../assets/gangubai.webp" class="d-block h-100 w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="../../assets/moonfall.jpg" class="d-block h-100 w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="../../assets/uncharted.webp" class="d-block h-100 w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#basicCarousel1" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#basicCarousel1" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!--multiple card carousel for english  -->
+    <div class="container mt-5 pt-3">
+        <h3 class="fw-bold ">English</h3>
+        <div id="english" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <!-- carousel card-1 for english -->
+                    <div class="row row-cols-1 row-cols-sm-2  row-cols-lg-4  px-3 py-3">
+                        <div class="col text-center mb-3" *ngFor="let movie of english">
+                            <div class="card h-100">
+                                <img src="{{movie.pic}}" class="w-100 h-100" alt="image not found">
+                                <button class="btn">
+                                    <h5 class="fs-3">{{movie.title}}</h5>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <!-- carousel card-2 for english1 -->
+                    <div class="row row-cols-1 row-cols-sm-2 m-2  row-cols-lg-4 px-3 py-3">
+                        <div class="col text-center mb-3" *ngFor="let movie of english1">
+                            <div class="card h-100">
+                                <img src="{{movie.pic}}" class="w-100 h-100" alt="image not found">
+                                <button class="btn">
+                                    <h5 class="fs-3">{{movie.title}}</h5>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#english" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bg-dark text-white rounded-pill" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#english" data-bs-slide="next">
+                <span class="carousel-control-next-icon bg-dark text-white rounded-pill" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- basic carousel 2 -->
+    <div id="basicCarousel2" class="carousel slide mt-5 pt-4" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://assets-in.bmscdn.com/promotions/cms/creatives/1645445571992_restaurant.jpg"
+                    class=" w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://assets-in.bmscdn.com/promotions/cms/creatives/1643608159306_fb.jpg" class=" w-100"
+                    alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://assets-in.bmscdn.com/promotions/cms/creatives/1645428522718_newsunburn.jpg"
+                    class=" w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#basicCarousel2" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#basicCarousel2" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- dummy carousel -->
+    <div class="infra m-4">
+        <h3 class="fw-bold">Infrastructure & cafeteria</h3>
+        <div id="dummy" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- screens -->
+                <div class="carousel-item active">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4">
+                        <div class="col" *ngFor="let data of screen">
+                            <div class="card">
+                                <img src="{{data.img}}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- foods -->
+                <div class="carousel-item">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4">
+                        <div class="col" *ngFor="let data of cafeteria">
+                            <div class="card">
+                                <img src="{{data.img}}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#dummy" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#dummy" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- multiple card carousel for tamil -->
+    <div class="container mt-3">
+        <h3 class="fw-bold ">Tamil</h3>
+        <div id="tamil" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <!-- carousel card-1 for tamil -->
+                    <div class="row row-cols-1 row-cols-sm-2  row-cols-lg-4  px-3 py-3">
+                        <div class="col text-center mb-3" *ngFor="let movie of tamil">
+                            <div class="card h-100">
+                                <img src="{{movie.pic}}" class="w-100 h-100" alt="image not found">
+                                <button class="btn">
+                                    <h5 class="fs-3">{{movie.title}}</h5>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <!-- carousel card-2 for tamail1 -->
+                    <div class="row row-cols-1 row-cols-sm-2 m-2  row-cols-lg-4 px-3 py-3">
+                        <div class="col text-center mb-3" *ngFor="let movie of tamil1">
+                            <div class="card h-100">
+                                <img src="{{movie.pic}}" class="w-100 h-100" alt="image not found">
+                                <button class="btn">
+                                    <h5 class="fs-3">{{movie.title}}</h5>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#tamil" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bg-dark text-white rounded-pill" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#tamil" data-bs-slide="next">
+                <span class="carousel-control-next-icon bg-dark text-white rounded-pill" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- trend -->
+    <div class="container">
+        <h2 class="text-white fw-bold ">Trending search</h2>
+        <!-- trend-1 -->
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4  px-3 py-3">
+            <div class="col  mb-3" data-aos="flip-left"  data-aos-delay="1500" *ngFor="let list of trend">
+                <div class="card trend h-100 text-center">
+                    <h3 class="fw-bold cardText ">{{list.title}}</h3>
+                    <h5 class="fw-bold ">{{list.language}}</h5>
+                </div>
+            </div>
+        </div>
+        <!-- trend-2 -->
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4  px-3 py-3">
+            <div class="col mb-3" data-aos="flip-right" data-aos-delay="1500" *ngFor="let list of trend1">
+                <div class="card trend  h-100 text-center">
+                    <h3 class="fw-bold cardText ">{{list.title}}</h3>
+                    <h5 class="fw-bold ">{{list.language}}</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- basic carousel 3 -->
+    <div id="basicCarousel3" class="carousel slide mt-4" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../../assets/83.webp" class="d-block h-100 w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="../../assets/badhaaido.webp" class="d-block h-100 w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="../../assets/deathOnNile.webp" class="d-block h-100 w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="../../assets/licoricePizza.webp" class="d-block h-100 w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#basicCarousel3" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#basicCarousel3" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- multiple card for malayalam -->
+    <div class="container mt-3">
+        <h3 class="fw-bold ">Malayalam</h3>
+        <div id="malayalam" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <!-- carousel card-1 for malayalam -->
+                    <div class="row row-cols-1 row-cols-sm-2  row-cols-lg-4  px-3 py-3">
+                        <div class="col  text-center mb-3" *ngFor="let movie of malayalam">
+                            <div class="card h-100">
+                                <img src="{{movie.pic}}" class="w-100 h-100" alt="image not found">
+                                <button class="btn">
+                                    <h5 class="fs-3">{{movie.title}}</h5>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <!-- carousel card-2 for malayalam1 -->
+                    <div class="row row-cols-1 row-cols-sm-2 m-2  row-cols-lg-4 px-3 py-3">
+                        <div class="col text-center mb-3" *ngFor="let movie of malayalam1">
+                            <div class="card h-100">
+                                <img src="{{movie.pic}}" class="w-100 h-100" alt="image not found">
+                                <button class="btn">
+                                    <h5 class="fs-3">{{movie.title}}</h5>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#malayalam" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bg-dark text-white rounded-pill" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#malayalam" data-bs-slide="next">
+                <span class="carousel-control-next-icon bg-dark text-white rounded-pill" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</div>
